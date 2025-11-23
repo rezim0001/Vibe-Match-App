@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>VibeMatch</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>VibeMatch</h1>
+    <h2>What's Your Vibe Today?</h2>
+
+    <div id="vibe-buttons">
+        <button onclick="selectVibe('Happy')">😊 Happy</button>
+        <button onclick="selectVibe('Sad')">😔 Sad</button>
+        <button onclick="selectVibe('Angry')">😡 Angry</button>
+        <button onclick="selectVibe('Calm')">😌 Calm</button>
+        <button onclick="selectVibe('Anxious')">😟 Anxious</button>
+    </div>
+
+    <div id="playlist-container">
+        <h3>Generated Playlist</h3>
+        <iframe id="spotify-player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+
+    <div id="quote-container">
+        <blockquote id="quote">Start where you are. Use what you have. Do what you can.<br>— Arthur Ashe</blockquote>
+    </div>
+
+    <button onclick="shareVibe()">Share my Vibe</button>
+
+    <footer>
+        Built with 💜 Love ^_^
+
+        Copyright (c) 2025 VibeMatch Inc. and Rezim. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
